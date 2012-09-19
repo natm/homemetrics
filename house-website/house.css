@@ -1,0 +1,49 @@
+        body {
+		font-family: Helvetica, arial, sans-serif;
+	}
+
+	.camera {
+		float: left;
+		padding: 10px; 
+		font-size: 9pt;
+		color: #000066;
+	}
+	
+	.sparkwait {
+		font-size: 7pt;
+	}
+	
+	.graph {
+		float: left;
+		padding: 10px 10px 10px 0px;
+	}
+
+	.powerusage {
+		float: left;
+	}
+
+	.liveheader {
+		font-size: 10pt;
+		font-weight: bold;
+	}
+
+	.livetitle {
+		width: 100px;
+		float: left;
+		font-size: 9pt;
+		padding: 5px 0px 0px 5px;
+	}
+
+	.livevalue {
+		float: left;
+		width: 80px;
+		font-size: 9pt;
+		padding: 5px 0px 0px 5px;
+	}
+
+	.livechange {
+		float: left;
+		width: 40px;
+		font-size: 9pt;
+		padding: 5px 0px 0px 5px;
+	}

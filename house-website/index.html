@@ -1,0 +1,52 @@
+<html>
+ <head>
+  <title>house monitoring</title>
+  <link rel="stylesheet" type="text/css" href="house.css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.timers-1.2.js"></script>
+  <script type="text/javascript" src="jquery.sparkline.min.js"></script>
+  <script type="text/javascript" src="jquery-blink.js"></script>
+  <script type="text/javascript" src="house.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28100386-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+ </head>
+ <body onload="startUp()">
+  <h2>House monitoring</h2>
+  <div class="cameras">
+   <div class="camera">Outside<br/><img id='camfrontdoor' width="160"/></div>
+   <div class="camera">Dog feeder1<br/><img id='camfeeder1' width="160"/></div>
+   <div class="camera">Dog feeder2<br/><img id='camfeeder2' width="160"/></div>
+  </div>
+<div style="clear:both"></div>
+<p>
+<div class=liveheader>Live values (updates in <span id="updatesin"></span>s): <span class="blink sparkwait">please wait</span></div>
+
+<div style="clear:both"></div>
+<div id='livelist'>
+</div>
+</p>
+
+  <p>
+   <a href='#' onclick="periodSelect('1min');">4 hour</a>
+   <a href='#' onclick="periodSelect('5min');">day</a>
+   <a href='#' onclick="periodSelect('30min');">week</a>
+  </p>
+  <div class="graphs">
+		<div class='graph' id='power_total'></div>
+		<div class='graph' id='net_internet'></div>
+		<div class='graph' id='temp_loft'></div>
+		<div class='graph' id='temp_boiler'></div>
+		<div class='graph' id='temp_combhouse'></div>
+		<div class='graph' id='net_wifiusers'></div>
+  </div>
+ </body>
+</html>
