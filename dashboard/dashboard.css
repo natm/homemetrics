@@ -1,0 +1,14 @@
+body {
+	background-color: black;
+	color: white;
+	font-family:"Verdana";
+	margin: 0px 0px 0px 0px;
+	padding:header-<length> 0 footer-<length> 0;
+}
+
+#clock {
+	color: white;
+	font-weight: bold;
+	font-size: xx-large;
+	margin: 0px 10px 0px 10px;
+}
